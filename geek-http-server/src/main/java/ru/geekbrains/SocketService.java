@@ -1,4 +1,7 @@
-package ru.geekbrains.logger;
+package ru.geekbrains;
+
+import ru.geekbrains.logger.ConsoleLogger;
+import ru.geekbrains.logger.Logger;
 
 import java.io.*;
 import java.net.Socket;
@@ -10,7 +13,7 @@ public class SocketService implements Closeable {
 
     private static final Logger logger = new ConsoleLogger();
 
-    private Socket socket;
+    private final Socket socket;
 
     public SocketService(Socket socket) {
         this.socket = socket;
