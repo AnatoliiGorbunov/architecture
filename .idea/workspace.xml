@@ -4,17 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f29e7306-1a37-4c3b-9ee3-13c24655a85f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-http-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-http-server/src/main/java/ru/geekbrains/HttpServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-http-server/src/main/java/ru/geekbrains/logger/ConsoleLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-http-server/src/main/java/ru/geekbrains/logger/Logger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-http-server/src/main/java/ru/geekbrains/logger/RequestHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/geek-http-server/src/main/java/ru/geekbrains/logger/SocketService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f29e7306-1a37-4c3b-9ee3-13c24655a85f" name="Changes" comment="HW_lesson_1">
+      <change afterPath="$PROJECT_DIR$/examples/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/src/main/java/ru/geekbrains/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/src/main/java/ru/geekbrains/bank/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/src/main/java/ru/geekbrains/bank/CurrentAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/src/main/java/ru/geekbrains/bank/FixedTermAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/src/main/java/ru/geekbrains/bank/WithdrawableAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-http-server/src/main/java/ru/geekbrains/RequestParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-http-server/src/main/java/ru/geekbrains/domain/HttpRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/geek-http-server/src/main/java/ru/geekbrains/domain/HttpResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-http-server/src/main/java/ru/geekbrains/HttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-http-server/src/main/java/ru/geekbrains/HttpServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-http-server/src/main/java/ru/geekbrains/logger/RequestHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-http-server/src/main/java/ru/geekbrains/RequestHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geek-http-server/src/main/java/ru/geekbrains/logger/SocketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/geek-http-server/src/main/java/ru/geekbrains/SocketService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +36,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lesson1" />
+        <entry key="$PROJECT_DIR$" value="HW_lesson_1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,7 +57,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "D:/WorkingMaterials/Architectures_and_design_patterns_in_ Java/architecture",
+    "last_opened_file_path": "D:/WorkingMaterials/Architectures_and_design_patterns_in_ Java/lesson2/geek-architecture-123",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -123,8 +126,17 @@
       <option name="presentableId" value="Default" />
       <updated>1665468868437</updated>
       <workItem from="1665468870171" duration="6639000" />
-      <workItem from="1665475802075" duration="10146000" />
+      <workItem from="1665475802075" duration="12478000" />
+      <workItem from="1666348242464" duration="9618000" />
     </task>
+    <task id="LOCAL-00001" summary="HW_lesson_1">
+      <created>1665488767984</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665488767984</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,5 +152,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="HW_lesson_1" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW_lesson_1" />
   </component>
 </project>

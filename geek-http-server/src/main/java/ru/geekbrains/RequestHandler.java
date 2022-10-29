@@ -1,5 +1,8 @@
-package ru.geekbrains.logger;
+package ru.geekbrains;
 
+
+import ru.geekbrains.logger.ConsoleLogger;
+import ru.geekbrains.logger.Logger;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,11 +18,14 @@ public class RequestHandler implements Runnable {
 
     private static final Logger logger = new ConsoleLogger();
 
+
     private final SocketService socketService;
 
     public RequestHandler(SocketService socketService) {
         this.socketService = socketService;
+
     }
+
 
     @Override
     public void run() {
