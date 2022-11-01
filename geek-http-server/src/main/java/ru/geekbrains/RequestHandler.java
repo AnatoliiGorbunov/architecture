@@ -1,6 +1,7 @@
 package ru.geekbrains;
 
 
+import ru.geekbrains.config.Config;
 import ru.geekbrains.logger.ConsoleLogger;
 import ru.geekbrains.logger.Logger;
 
@@ -17,11 +18,13 @@ public class RequestHandler implements Runnable {
     private static final String www = "D:\\WorkingMaterials\\Architectures_and_design_patterns_in_ Java\\architecture\\www\\index.html";
 
     private static final Logger logger = new ConsoleLogger();
+    private final Config config;
 
 
     private final SocketService socketService;
 
-    public RequestHandler(SocketService socketService) {
+    public RequestHandler(Config config, SocketService socketService) {
+        this.config = config;
         this.socketService = socketService;
 
     }
