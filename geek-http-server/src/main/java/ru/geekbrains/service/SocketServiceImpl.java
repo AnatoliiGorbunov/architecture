@@ -1,55 +1,50 @@
-package ru.geekbrains;
+package ru.geekbrains.service;
 
-import ru.geekbrains.logger.ConsoleLogger;
-import ru.geekbrains.logger.Logger;
-
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Deque;
+import java.util.LinkedList;
 
-public class SocketService implements Closeable {
-
-    private static final Logger logger = new ConsoleLogger();
-
+public class SocketServiceImpl implements SocketService {
     private final Socket socket;
 
-    public SocketService(Socket socket) {
+    SocketServiceImpl(Socket socket) {
         this.socket = socket;
     }
 
-    public List<String> readRequest() {
+    public Deque<String> readRequest() {
         try {
-            BufferedReader input = new BufferedReader(new InputStreamReader(socket.getInputStream(), StandardCharsets.UTF_8));
+            BufferedReader input = new BufferedReader(
+                    new InputStreamReader(
+                            socket.getInputStream(), StandardCharsets.UTF_8));
 
             while (!input.ready()) ;
-            List<String> request = new ArrayList<>();
+
+            Deque<String> request = new LinkedList<>();
             while (input.ready()) {
                 String line = input.readLine();
-                logger.info(line);
+                System.out.println(line);
                 request.add(line);
             }
             return request;
         } catch (IOException e) {
             throw new IllegalStateException(e);
         }
-
     }
 
-    public void writeResponse(String headers, BufferedReader reader) {
+    public void writeResponse(String rawResponse) {
         try {
             PrintWriter output = new PrintWriter(socket.getOutputStream());
-            output.print(headers);
-            if (reader != null) {
-                reader.transferTo(output);
-            }
+            output.print(rawResponse);
             output.flush();
         } catch (IOException e) {
             throw new IllegalStateException(e);
         }
     }
-
 
     @Override
     public void close() throws IOException {
